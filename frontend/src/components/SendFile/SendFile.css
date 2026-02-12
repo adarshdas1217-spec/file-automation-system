@@ -1,0 +1,43 @@
+.send-file-wrapper {
+  margin-top: 24px;
+  padding: 12px;
+  border: 1px solid #000;
+  font-family: "Times New Roman", serif;
+}
+
+.send-file-title {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
+
+.send-file-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.send-file-table td {
+  border: 1px solid #000;
+  padding: 6px;
+}
+
+.send-file-table select,
+.send-file-table textarea {
+  width: 100%;
+  font-family: inherit;
+  border: 1px solid #000;
+  padding: 4px;
+}
+
+.send-file-wrapper button {
+  padding: 6px 14px;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+.send-file-wrapper button:hover {
+  background: #eee;
+}

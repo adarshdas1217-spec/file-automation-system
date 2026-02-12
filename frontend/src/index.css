@@ -1,0 +1,248 @@
+/* ============================= */
+/* ACCOUNTS – VOUCHER LIST PAGE */
+/* ============================= */
+
+.voucher-page {
+  padding: 20px;
+  background: #ffffff;
+}
+
+/* TABLE */
+.voucher-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+.voucher-table thead tr {
+  background-color: #1f2937; /* dark header */
+}
+
+.voucher-table th {
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #374151;
+  white-space: nowrap;
+}
+
+.voucher-table td {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  color: #111827;
+  vertical-align: middle;
+}
+
+/* Zebra rows */
+.voucher-table tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+/* ============================= */
+/* STATUS BADGES */
+/* ============================= */
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Pending */
+.status.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+/* Approved */
+.status.approved {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+/* Rejected */
+.status.rejected {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+/* Paid */
+.status.paid {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+/* ============================= */
+/* ACTION BUTTONS */
+/* ============================= */
+
+.btn {
+  padding: 6px 10px;
+  margin: 2px;
+  border-radius: 4px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Approve */
+.btn.approve {
+  background-color: #16a34a;
+  color: #ffffff;
+}
+
+.btn.approve:hover {
+  background-color: #15803d;
+}
+
+/* Reject */
+.btn.reject {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.btn.reject:hover {
+  background-color: #b91c1c;
+}
+
+/* Pay */
+.btn.pay {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+.btn.pay:hover {
+  background-color: #1d4ed8;
+}
+
+/* Paid (disabled) */
+.btn.paid {
+  background-color: #6b7280;
+  color: #ffffff;
+  cursor: not-allowed;
+}
+
+/* ============================= */
+/* EMPTY STATE */
+/* ============================= */
+
+.voucher-table td[colspan="6"] {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.btn.print {
+  background-color: #0d6efd;
+  color: #fff;
+  margin-left: 6px;
+}
+
+.btn.print:hover {
+  background-color: #084298;
+}
+
+/* ===== PAYMENT MODAL ===== */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 20px;
+  width: 400px;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-box h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 6px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.sidebar {
+  width: 240px;
+  background: #1f2937;
+  color: #fff;
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 8px 0;
+}
+
+.sidebar a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.section-title {
+  margin-top: 12px;
+  font-weight: bold;
+  color: #9ca3af;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #374151;
+  margin: 12px 0;
+}
+

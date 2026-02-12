@@ -1,0 +1,39 @@
+/* ================= FILE DETAILS PAGE ================= */
+
+.file-details-page {
+  padding: 10px;
+}
+
+/* ================= FILE HEADER ================= */
+
+.file-header {
+  margin-bottom: 24px;
+}
+
+.file-title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+/* ================= FILE DETAILS TABLE ================= */
+
+.file-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.file-details-table td {
+  border: 1px solid #000;
+  padding: 6px 10px;
+  vertical-align: top;
+}
+
+.file-details-table .label {
+  width: 160px;
+  font-weight: bold;
+  background-color: #f5f5f5;
+}

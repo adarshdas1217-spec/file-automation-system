@@ -1,0 +1,149 @@
+/* ================= BASE ================= */
+
+.note-sheet-wrapper {
+  margin-top: 24px;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.note-sheet-title {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 14px;
+  text-decoration: underline;
+}
+
+/* ================= PAPER ================= */
+
+.note-sheet-paper {
+  background: #fffdf7;          /* soft paper tone */
+  border: 1px solid #aaa;
+  padding: 22px 26px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+  /* 🔑 numbering reset */
+  counter-reset: note-counter;
+}
+
+/* ================= NOTE ROW ================= */
+
+.note-row {
+  padding: 18px 0;
+  border-bottom: 1px dashed #bbb;
+
+  /* 🔑 increment numbering */
+  counter-increment: note-counter;
+}
+
+.note-row:last-child {
+  border-bottom: none;
+}
+
+/* ================= NOTE CONTENT ================= */
+
+.note-content {
+  width: 100%;
+}
+
+/* ================= NOTE TEXT ================= */
+
+.note-text {
+  white-space: pre-wrap;
+  line-height: 1.75;
+  font-size: 15px;
+  color: #222;
+  margin-bottom: 22px;
+  text-align: justify;
+}
+
+/* 🔑 Inject number BEFORE text */
+.note-text::before {
+  content: counter(note-counter) ". ";
+  font-weight: bold;
+  color: #444;
+}
+
+/* ================= SIGNATURE ================= */
+
+.note-sign {
+  text-align: right;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.note-sign div {
+  margin-bottom: 2px;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.empty-note {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+/* ================= ADD NOTE FORM ================= */
+
+.add-note-form {
+  margin-top: 26px;
+  padding-top: 16px;
+  border-top: 2px solid #ccc;
+}
+
+.add-note-form h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.add-note-form textarea {
+  width: 100%;
+  min-height: 120px;
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #aaa;
+  background: #fff;
+  resize: vertical;
+  line-height: 1.6;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+/* ================= BUTTONS ================= */
+
+.note-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Draft button */
+.btn-secondary {
+  background: #f4f4f4;
+  border: 1px solid #999;
+  padding: 6px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Finalise button */
+.btn-primary {
+  background: #2c2c2c;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 6px 18px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Send File button */
+.btn-danger {
+  background: #fff;
+  border: 2px solid #000;
+  padding: 8px 22px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+
