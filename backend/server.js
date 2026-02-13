@@ -32,6 +32,7 @@ const depositRoutes = require("./routes/depositRoutes");
 const accountsReportRoutes = require("./routes/accountsReportRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const paymentRegisterExportRoutes = require("./routes/paymentRegisterExportRoutes");
+const sendToSOC = require("./middleware/socLogger");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -48,6 +49,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // ---------------- ROUTES ----------------
+app.use(sendToSOC); // SOC Logger Middleware (logs all API requests to SOC)
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
 
