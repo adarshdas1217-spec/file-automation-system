@@ -39,7 +39,7 @@ const PORT = process.env.PORT || 5000;
 // ---------------- MIDDLEWARE ----------------
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.FRONTEND_URL || "*",
     credentials: true,
   })
 );
@@ -85,7 +85,7 @@ sequelize
   .then(() => {
     console.log("Database synced (tables created)");
     app.listen(PORT, () => {
-      console.log(`Backend running on http://localhost:${PORT}`);
+      console.log(`Backend running on port ${PORT}`);
     });
   })
   .catch((err) => {
