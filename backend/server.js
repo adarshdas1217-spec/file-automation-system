@@ -33,6 +33,7 @@ const accountsReportRoutes = require("./routes/accountsReportRoutes");
 const paymentRoutes = require("./routes/paymentRoutes");
 const paymentRegisterExportRoutes = require("./routes/paymentRegisterExportRoutes");
 const sendToSOC = require("./middleware/socLogger");
+app.set("trust proxy", true);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
